@@ -6,16 +6,14 @@
   "About": {
     "paragraph": "Our skilled team demystifies your city's tree bylaws and helps gets your project moving sooner. With our comprehensive Arborist Reports and Tree Protection Plans, you stay compliant and protect the trees too!",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Arborist Report",
+      "Tree Protection Plans",
+      "Tree Risk Assessments (TRAQ certified)"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Butternut Health Assessments",
+      "Site Monitoring",
+      "Tree Protection Hoarding"
     ]
   },
   "Gallery": [
@@ -108,7 +106,7 @@
     {
       "img": "img/team/clayton-gray.png",
       "name": "Clayton Gray",
-      "job": "International Society of Arboriculture Certified Arborist (ON-2611A) & ISA Tree Risk Assessment Qualification (TRAQ)"
+      "job": "International Society of Arboriculture Certified Arborist (ON-2611A) \n ISA Tree Risk Assessment Qualification (TRAQ)"
     }
   ],
   "Contact": {

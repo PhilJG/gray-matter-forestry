@@ -21,7 +21,7 @@ export const Navigation = (props) => {
           </button>
           <a className="navbar-brand page-scroll " href="#page-top">
             <img src={Logo} className="navbar-logo" alt="" />
-            React Landing Page
+            Gray Matter Forestry Consulting
           </a>{" "}
         </div>
 
@@ -40,16 +40,6 @@ export const Navigation = (props) => {
                 About
               </a>
             </li>
-            <li>
-              <a href="#services" className="page-scroll">
-                Services
-              </a>
-            </li>
-            {/* <li>
-              <a href="#portfolio" className="page-scroll">
-                Gallery
-              </a>
-            </li> */}
             <li>
               <a href="#testimonials" className="page-scroll">
                 Testimonials
