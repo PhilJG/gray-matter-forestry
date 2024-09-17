@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+
+import LoadSpinner from "./LoadSpinner";
 
 const initialState = {
   name: "",
@@ -9,6 +11,10 @@ const initialState = {
 };
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
+  const [query, setQuery] = useState("");
+  const [addresses, setAddresses] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [hasInput, setHasInput] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -41,6 +47,50 @@ export const Contact = (props) => {
         }
       );
   };
+
+  //Address search
+  useEffect(() => {
+    const fetchData = async () => {
+      if (query.length > 0 && query.length >= 3) {
+        setIsLoading(true);
+        try {
+          const response = await fetch(
+            `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+              query
+            )}&countrycodes=ca&limit=5`
+          );
+          const data = await response.json();
+          setAddresses(data);
+        } catch (error) {
+          console.error("Error fetching geocoding data:", error);
+        } finally {
+          setIsLoading(false);
+        }
+      } else {
+        setIsLoading(false);
+        setAddresses([]);
+      }
+    };
+
+    fetchData();
+  }, [query, hasInput]);
+
+  const handleInputChange = (event) => {
+    const inputValue = event.target.value;
+    setQuery(event.target.value);
+    if (event.target.value.length >= 3) {
+      setHasInput(true);
+    } else {
+      setHasInput(false);
+    }
+  };
+
+  const handleSelectAddress = (address) => {
+    setQuery(address);
+
+    setAddresses([]);
+  };
+
   return (
     <div>
       <div id="contact">
@@ -69,6 +119,36 @@ export const Contact = (props) => {
                       />
                       <p className="help-block text-danger"></p>
                     </div>
+                    <input
+                      name="address"
+                      id="addressInput"
+                      placeholder="Enter your address"
+                      type="text"
+                      value={query}
+                      onChange={handleInputChange}
+                      className="form-control w-full text-dark border border-gray-300 rounded-md relative"
+                    />
+                    {/* {isLoading && (
+                      <div className="text-xs">
+                        <LoadSpinner />
+                      </div>
+                    )} */}
+                    <div
+                      id="autocompleteResults"
+                      className={`absolute z-10 bg-white border border-gray-300 rounded-md ${
+                        hasInput ? "" : "hidden"
+                      }`}
+                    >
+                      {addresses.map((item) => (
+                        <div
+                          key={item.place_id}
+                          onClick={() => handleSelectAddress(item.display_name)}
+                          className="p-2 cursor-pointer bg-white text-dark"
+                        >
+                          {item.display_name}
+                        </div>
+                      ))}
+                    </div>{" "}
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Logo from "../Gray-Matter-Logo.svg";
+import Logo from "../gray-matter-wordmark.svg";
 
 export const Navigation = (props) => {
   return (
@@ -19,9 +19,8 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll " href="#page-top">
+          <a className="navbar-brand flex page-scroll " href="#page-top">
             <img src={Logo} className="navbar-logo" alt="" />
-            Gray Matter Forestry Consulting
           </a>{" "}
         </div>
 

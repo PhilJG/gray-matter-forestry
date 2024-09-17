@@ -1,9 +1,12 @@
 function LoadSpinner() {
   return (
-    <div className="mb-2 rounded-xl ">
+    <div className="fa-spin spinner-border spinner-border-sm text-xs">
       <svg
-        className=" col-span-5 w-12 h-12 animate-spin text-green-300"
+        className="bi fa-spin bi-xs"
+        width="50"
+        height="50"
         viewBox="0 0 24 24"
+        preserveAspectRatio="xMinYMin meet"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
