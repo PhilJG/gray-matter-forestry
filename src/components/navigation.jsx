@@ -1,5 +1,7 @@
 import React from "react";
 
+import Logo from "../Gray-Matter-Logo.svg";
+
 export const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -17,7 +19,8 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
+          <a className="navbar-brand page-scroll " href="#page-top">
+            <img src={Logo} className="navbar-logo" alt="" />
             React Landing Page
           </a>{" "}
         </div>

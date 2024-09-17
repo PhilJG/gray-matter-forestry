@@ -1,3 +1,12 @@
+:root {
+  --deep-grey: #6d6e70;
+  --onyx: #404041;
+  --silver: #bbbdbf;
+  --pakistan-green: #054720;
+  --Tekhelet: #3b3070;
+  --Shamrock-green: #009345;
+}
+
 body,
 html {
   font-family: "Open Sans", sans-serif;
@@ -71,6 +80,9 @@ hr {
   border: 0;
 }
 /* Navigation */
+.navbar-logo {
+  width: 50px;
+}
 #menu {
   padding: 15px;
   transition: all 0.8s;
@@ -86,6 +98,7 @@ hr {
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
+  display: flex;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
@@ -166,8 +179,8 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background-color: var(--Tekhelet);
+  background-image: linear-gradient(to right, var(--Tekhelet) 0%, #6372ff 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -208,7 +221,8 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(../img/gray-matter-forestry-header.jpg) center center
+    no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -244,6 +258,11 @@ header .intro-text {
   padding-bottom: 200px;
   text-align: center;
 }
+
+.feature-border {
+  border: 1px solid #3498db;
+}
+
 /* Features Section */
 #features {
   background: #f6f6f6;
