@@ -143,7 +143,7 @@ export const Contact = (props) => {
                         <div
                           key={item.place_id}
                           onClick={() => handleSelectAddress(item.display_name)}
-                          className="p-2 cursor-pointer bg-white text-dark"
+                          className="address-string p-2 cursor-pointer bg-white text-dark"
                         >
                           {item.display_name}
                         </div>
