@@ -160,12 +160,11 @@ hr {
   background-color: #608dfd;
 }
 .section-title {
+  margin-top: 70px;
   margin-bottom: 70px;
 }
 .section-title h2 {
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 15px;
   padding-bottom: 15px;
 }
 .section-title h2::after {
@@ -449,7 +448,6 @@ header .intro-text {
 }
 /* Testimonials Section */
 #testimonials {
-  padding: 100px 0;
   background: #f6f6f6;
 }
 #testimonials i {

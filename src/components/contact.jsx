@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import React, { useRef } from "react";
 // import { useNavigate } from "react-router-dom";
 
-import { InputField, AddressInputField } from "./InputField";
+import { InputField, CategoryDropdown, AddressInputField } from "./InputField";
 
 import Logo from "../gray-matter-wordmark-white.png";
 import ISACetrification from "../isa-certification.webp";
@@ -14,18 +14,11 @@ const initialState = {
 };
 export const Contact = (props) => {
   const formRef = useRef(null);
-  // const navigate = useNavigate();
-  // const [{ name, email, message }, setState] = useState(initialState);
+
   const [query, setQuery] = useState("");
   const [addresses, setAddresses] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [hasInput, setHasInput] = useState(false);
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setState((prevState) => ({ ...prevState, [name]: value }));
-  // };
-  // const clearState = () => setState({ ...initialState });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,67 +30,6 @@ export const Contact = (props) => {
       .then(() => {
         console.log("Form successfully submitted");
       });
-  };
-
-  //   emailjs
-  //     .sendForm(
-  //       "YOUR_SERVICE_ID",
-  //       "YOUR_TEMPLATE_ID",
-  //       e.target,
-  //       "YOUR_PUBLIC_KEY"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         clearState();
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
-
-  //Address search
-  useEffect(() => {
-    const fetchData = async () => {
-      if (query.length > 0 && query.length >= 3) {
-        setIsLoading(true);
-        try {
-          const response = await fetch(
-            `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
-              query
-            )}&countrycodes=ca&limit=5`
-          );
-          const data = await response.json();
-          setAddresses(data);
-        } catch (error) {
-          console.error("Error fetching geocoding data:", error);
-        } finally {
-          setIsLoading(false);
-        }
-      } else {
-        setIsLoading(false);
-        setAddresses([]);
-      }
-    };
-
-    fetchData();
-  }, [query, hasInput]);
-
-  const handleInputChange = (event) => {
-    const inputValue = event.target.value;
-    setQuery(event.target.value);
-    if (event.target.value.length >= 3) {
-      setHasInput(true);
-    } else {
-      setHasInput(false);
-    }
-  };
-
-  const handleSelectAddress = (address) => {
-    setQuery(address);
-
-    setAddresses([]);
   };
 
   return (
@@ -122,9 +54,10 @@ export const Contact = (props) => {
             >
               <div className="row">
                 <InputField label="Name" name="data[name]" />
-                <InputField label="Email" name="data[email]" />
+                <InputField label="Phone" name="data[phone]" type="tel" />
+                <InputField label="Email" type="email" name="data[email]" />
                 <AddressInputField />
-                <InputField label="Message" name="data[message]" />
+                <CategoryDropdown />
                 <InputField
                   label="Project Description"
                   name="data[description]"

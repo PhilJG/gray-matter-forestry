@@ -6,8 +6,10 @@ export const Team = (props) => {
   return (
     <div id="team" className="text-center">
       <div className="container">
-        <div className="row section-title ">
+        <div className="text-center section-title ">
           <h2>Meet the Team</h2>
+        </div>
+        <div className="row">
           <div className=" headshot col-md-4 col-sm-12 order-1 order-md-2">
             <img src={ClaytonGrayHeadshot} className="img-fluid " alt="" />
           </div>

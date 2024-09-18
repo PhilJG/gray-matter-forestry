@@ -17,6 +17,36 @@ export const InputField = ({ label, type, name }) => {
   );
 };
 
+export const CategoryDropdown = () => {
+  const [selectedCategory, setSelectedCategory] = useState("");
+
+  const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  return (
+    <div className="form-group">
+      <select
+        id="question-category"
+        value={selectedCategory}
+        name="data[category]"
+        onChange={handleCategoryChange}
+        className="form-control"
+      >
+        <option value="">Select a category</option>
+        <option value="tree-safety-risk-assessment">
+          Tree Safety/Risk Assessment
+        </option>
+        <option value="construction-regulations">
+          Construction/Regulations
+        </option>
+        <option value="tree-care">Tree Care (Pruning, Healthcare, etc.)</option>
+        <option value="other-not-sure">Other/Not Sure</option>
+      </select>
+    </div>
+  );
+};
+
 export const AddressInputField = () => {
   const [query, setQuery] = useState("");
   const [addresses, setAddresses] = useState([]);
