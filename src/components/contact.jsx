@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import emailjs from "emailjs-com";
 import React, { useRef } from "react";
 // import { useNavigate } from "react-router-dom";
+
+import { InputField, AddressInputField } from "./InputField";
 
 import Logo from "../gray-matter-wordmark-white.png";
 import ISACetrification from "../isa-certification.webp";
@@ -120,76 +121,17 @@ export const Contact = (props) => {
               action="https://sheetdb.io/api/v1/zevs0j3gpu78v"
             >
               <div className="row">
-                <div className="col-md-12">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      id="nameInput"
-                      name="data[name]"
-                      className="form-control"
-                      placeholder="Name"
-                      required
-                    />
-                    <p className="help-block text-danger"></p>
-                  </div>
-                  <input
-                    name="data[address]"
-                    id="addressInput"
-                    placeholder="Address / Location of the trees"
-                    type="text"
-                    value={query}
-                    onChange={handleInputChange}
-                    className="form-control w-full text-dark border border-gray-300 rounded-md relative"
-                  />
-                  {/* {isLoading && (
-                      <div className="text-xs">
-                        <LoadSpinner />
-                      </div>
-                    )} */}
-                  <div
-                    id="autocompleteResults"
-                    className={`absolute z-10 bg-white border border-gray-300 rounded-md ${
-                      hasInput ? "" : "hidden"
-                    }`}
-                  >
-                    {addresses.map((item) => (
-                      <div
-                        key={item.place_id}
-                        onClick={() => handleSelectAddress(item.display_name)}
-                        className="address-string p-2 cursor-pointer bg-white text-dark"
-                      >
-                        {item.display_name}
-                      </div>
-                    ))}
-                  </div>{" "}
-                </div>
-                <div className="col-md-12">
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      id="email"
-                      name="data[email]"
-                      className="form-control"
-                      placeholder="Email"
-                      required
-                    />
-                    <p className="help-block text-danger"></p>
-                  </div>
-                </div>
+                <InputField label="Name" name="data[name]" />
+                <InputField label="Email" name="data[email]" />
+                <AddressInputField />
+                <InputField label="Message" name="data[message]" />
+                <InputField
+                  label="Project Description"
+                  name="data[description]"
+                  type="textarea"
+                />
               </div>
 
-              <div className="form-group">
-                <textarea
-                  name="data[message]"
-                  id="message"
-                  className="form-control"
-                  rows="4"
-                  placeholder="Message"
-                  required
-                ></textarea>
-                <p className="help-block text-danger"></p>
-              </div>
-              <div id="success"></div>
               <button type="submit" className="btn btn-custom btn-lg">
                 Send Message
               </button>
