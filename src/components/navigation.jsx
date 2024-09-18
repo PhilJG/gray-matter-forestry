@@ -1,6 +1,6 @@
 import React from "react";
 
-import Logo from "../gray-matter-wordmark.png";
+import Logo from "../gray-matter-wordmark.svg";
 
 export const Navigation = (props) => {
   return (

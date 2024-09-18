@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
 
-import LoadSpinner from "./LoadSpinner";
+import GrayMatterWordmark from "../gray-matter-wordmark-white.png";
+import ISAcertification from "../isa-certification.webp";
 
 const initialState = {
   name: "",
@@ -122,7 +123,7 @@ export const Contact = (props) => {
                     <input
                       name="address"
                       id="addressInput"
-                      placeholder="Enter your address"
+                      placeholder="Address"
                       type="text"
                       value={query}
                       onChange={handleInputChange}
@@ -186,6 +187,7 @@ export const Contact = (props) => {
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
+            <img className="logo" src={ISAcertification} alt="" />
             <div className="contact-item">
               <h3>Contact Info</h3>
               <p>
@@ -210,29 +212,6 @@ export const Contact = (props) => {
                 </span>{" "}
                 {props.data ? props.data.email : "loading"}
               </p>
-            </div>
-          </div>
-          <div className="col-md-12">
-            <div className="row">
-              <div className="social">
-                <ul>
-                  <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
