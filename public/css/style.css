@@ -493,7 +493,7 @@ header .intro-text {
 }
 
 #team .headshot {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 #team h4 {
@@ -516,6 +516,7 @@ header .intro-text {
   padding: 10px 0 0;
   color: #888;
 }
+
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
@@ -669,9 +670,14 @@ label {
 }
 /* Footer Section*/
 #footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background: #f6f6f6;
   padding: 30px 0;
+  position: absolute;
 }
+
 #footer p {
   color: #888;
   font-size: 14px;

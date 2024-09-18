@@ -1,6 +1,5 @@
 import React from "react";
 
-import ISACertification from "../isa-certification.webp";
 import ClaytonGrayHeadshot from "../clayton-gray.png";
 
 export const Team = (props) => {
