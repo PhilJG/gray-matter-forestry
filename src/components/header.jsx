@@ -1,6 +1,6 @@
 import React from "react";
 
-import Logo from "../gray-matter-wordmark-white.png";
+import Logo from "../Gray-Matter-Logo-wordmark.svg";
 
 export const Header = (props) => {
   return (

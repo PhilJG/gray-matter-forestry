@@ -2,7 +2,7 @@ import React from "react";
 
 export const Features = (props) => {
   return (
-    <div id="features" className="text-center">
+    <div id="features" className="text-center section">
       <div className="container">
         <div className="text-center section-title">
           <h2>Features</h2>

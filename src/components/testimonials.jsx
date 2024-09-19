@@ -2,7 +2,7 @@ import React from "react";
 
 export const Testimonials = (props) => {
   return (
-    <div id="testimonials">
+    <div id="testimonials" className="section">
       <div className="container">
         <div className="section-title text-center">
           <h2>What our clients say</h2>

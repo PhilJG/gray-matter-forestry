@@ -85,6 +85,11 @@ hr {
   /* padding-right: 2rem; */
   padding-bottom: 4rem;
 }
+
+.section {
+  padding: 70px 0;
+}
+
 #menu {
   padding: 15px;
   transition: all 0.8s;
@@ -160,7 +165,6 @@ hr {
   background-color: #608dfd;
 }
 .section-title {
-  margin-top: 70px;
   margin-bottom: 70px;
 }
 .section-title h2 {
@@ -234,7 +238,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/gray-matter-forestry-header.jpg) center center
+  background: url(../img/gray-matter-forestry-header.webp) center center
     no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
