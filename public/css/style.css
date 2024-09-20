@@ -43,6 +43,7 @@ h5 {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 20px;
+  text-align: left;
 }
 p {
   font-size: 15px;
@@ -366,7 +367,11 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(
+    to right,
+    var(--pakistan-green) 0%,
+    var(--Shamrock-green) 100%
+  );
   color: #fff;
 }
 #services .service-desc {
@@ -390,7 +395,11 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(
+    to right,
+    var(--pakistan-green) 0%,
+    var(--Shamrock-green) 100%
+  );
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);

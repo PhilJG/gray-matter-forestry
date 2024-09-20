@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import { SeeTheForest } from "./components/seetheforest";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -29,6 +30,7 @@ const App = () => {
       <Navigation />
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
+      <SeeTheForest />
       <Features data={landingPageData.Features} />
       <Services data={landingPageData.Services} />
       {/* <Gallery data={landingPageData.Gallery} /> */}

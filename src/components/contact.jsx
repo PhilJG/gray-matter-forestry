@@ -94,12 +94,12 @@ export const Contact = (props) => {
             </p>
           </div>
           <div className="contact-item">
-            {/* <p>
+            <p>
               <span>
                 <i className="fa fa-envelope-o"></i> Email
               </span>{" "}
               {props.data ? props.data.email : "loading"}
-            </p> */}
+            </p>
           </div>
         </div>
       </div>
