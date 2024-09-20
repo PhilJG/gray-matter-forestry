@@ -1,6 +1,7 @@
 import React from "react";
 
-import SeeTheImage from "../see-the-forest-gray-matter-forestry.webp";
+import SeeTheForestImage from "../see-the-forest-gray-matter-forestry.webp";
+import SeeTheTreesImage from "../see-the-trees-gray-matter-forestry.webp";
 
 export const SeeTheForest = (props) => {
   return (
@@ -12,8 +13,8 @@ export const SeeTheForest = (props) => {
             See The Trees
           </h2>
         </div>
-        <div className="row">
-          <div className="col-xs-12 col-md-9">
+        <div className="row flex-row-reverse flex-md-row">
+          <div className="col-xs-12 col-md-8">
             <p>
               Nowhere is it written that urban development must come at the
               expense of our natural environment. Or, that development must stop
@@ -35,7 +36,23 @@ export const SeeTheForest = (props) => {
               simplified, efficient solution for construction projects in the
               Greater Toronto Area (GTA).
             </p>
-            {/* <h5>Our Story</h5>
+          </div>
+          <div className="col-xs-12 col-md-4 image-text-container">
+            {" "}
+            <img
+              src={SeeTheForestImage}
+              className="img-responsive"
+              alt=""
+            />{" "}
+          </div>
+        </div>
+        <div className="row flex-md-row-reverse image-text-container">
+          <div className="col-xs-12 col-md-4 ">
+            <img src={SeeTheTreesImage} className="img-responsive" alt="" />
+          </div>
+          <div className="col-xs-12 col-md-8 ">
+            {" "}
+            <h5>Our Story</h5>
             <p>
               Construction projects are inherently complex, with numerous boxes
               that need to be checked at all stages. Recognizing that we are
@@ -51,11 +68,7 @@ export const SeeTheForest = (props) => {
               through the system with less change requirements from the
               regulators, saving you time and money while you protect the trees.
               Everybody wins!
-            </p> */}
-          </div>
-          <div className="col-xs-12 col-md-3">
-            {" "}
-            <img src={SeeTheImage} className="img-responsive" alt="" />{" "}
+            </p>
           </div>
         </div>
       </div>

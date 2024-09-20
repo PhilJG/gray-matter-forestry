@@ -4,7 +4,7 @@ import ClaytonGrayHeadshot from "../clayton-gray.png";
 
 export const Team = (props) => {
   return (
-    <div id="team " className="text-center section">
+    <div id="team" className="text-center section">
       <div className="container">
         <div className="text-center section-title ">
           <h2>Meet the Team</h2>

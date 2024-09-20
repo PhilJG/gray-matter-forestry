@@ -364,6 +364,13 @@ header .intro-text {
   line-height: 24px;
   margin: 30px 0;
 }
+
+/* See the forest */
+.image-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Services Section */
 #services {
   padding: 100px 0;
@@ -717,6 +724,10 @@ label {
     height: 50vh;
     background-size: cover;
     background-position: top right;
+  }
+
+  .image-text-container {
+    flex-direction: column-reverse;
   }
 
   header .intro-text {
