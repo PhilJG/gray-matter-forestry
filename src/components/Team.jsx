@@ -10,16 +10,20 @@ export const Team = (props) => {
           <h2>Meet the Team</h2>
         </div>
         <div className="row">
-          <div className=" headshot col-md-4 col-sm-12 order-1 order-md-2">
-            <img src={ClaytonGrayHeadshot} className="img-fluid " alt="" />
+          <div className=" col-md-4 col-sm-12 order-1 order-md-2">
+            <img
+              src={ClaytonGrayHeadshot}
+              className="img-fluid  headshot"
+              alt="Clayton Gray"
+            />
           </div>
           <div className="col-md-8 col-sm-12 order-2 order-md-1">
             <p>
-              Clayton Gray is an ISA Certified Arborist with nearly two decades
-              of experience in arboriculture and forestry silviculture, and is
-              committed to creating a balance between urban development while
-              honoring and preserving nature. His years of field work in the
-              wild forests of the British Columbia interior and the urban
+              <b>Clayton Gray is an ISA Certified Arborist</b> with nearly two
+              decades of experience in arboriculture and forestry silviculture,
+              and is committed to creating a balance between urban development
+              while honoring and preserving nature. His years of field work in
+              the wild forests of the British Columbia interior and the urban
               forests of the GTA have given Clayton a strong appreciation for
               the ecological and economic values of the forests and trees. After
               spending several years in silviculture fieldwork, he attended

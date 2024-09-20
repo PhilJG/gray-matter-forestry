@@ -498,8 +498,8 @@ header .intro-text {
   padding: 100px 0;
 }
 
-#team .headshot {
-  margin-bottom: 4rem;
+.headshot {
+  padding-bottom: 3rem;
 }
 
 #team h4 {
@@ -696,10 +696,6 @@ label {
 }
 
 @media (max-width: 768px) {
-  /* .container {
-    overflow-x: hidden;
-  } */
-
   .navbar-fixed-top {
     position: static;
     left: 0;
@@ -707,19 +703,17 @@ label {
     margin: 0 auto;
   }
 
-  /* .navbar-header {
-    margin-left: 0;
-    margin-right: 0;
-  } */
-
   .intro {
-    height: 75vh;
+    height: 50vh;
     background-size: cover;
     background-position: top right;
   }
 
-  .intro-text {
-    padding-top: 150px;
+  header .intro-text {
+    padding-top: 50px;
+  }
+  .header-container {
+    height: 50vh;
   }
 
   #about img {
