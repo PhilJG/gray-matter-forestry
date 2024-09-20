@@ -5,7 +5,7 @@ export const Features = (props) => {
     <div id="features" className="text-center section">
       <div className="container">
         <div className="text-center section-title">
-          <h2>Features</h2>
+          <h2>Benefits</h2>
         </div>
         <div className="row border justify-content-center">
           <div className="offset-md-2">

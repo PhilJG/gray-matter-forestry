@@ -1,11 +1,12 @@
 import React from "react";
 
-export const About = (props) => {
+export const SeeTheForest = (props) => {
   return (
-    <div id="about" className="section text-center">
+    <div id="see-the-forest" className="section text-center">
       <div className="container">
         <div className="section-title text-center">
-          <h2>We Get Your Urban Forestry Permits Faster</h2>
+          <h2>See The Forest</h2>
+          <h2>See The Trees</h2>
         </div>
         <div className="row">
           <div className="col-xs-12 col-md-6">
