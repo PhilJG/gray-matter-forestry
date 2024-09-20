@@ -35,7 +35,7 @@ export const Contact = (props) => {
   return (
     <div id="contact">
       <div className="container contact-container">
-        <div className="col-md-8">
+        <div className="col-md-8 ">
           <div className="row">
             <div className="section-title">
               <h2>Get In Touch</h2>
@@ -56,7 +56,11 @@ export const Contact = (props) => {
                 <InputField label="Name" name="data[name]" />
                 <InputField label="Phone" name="data[phone]" type="phone" />
                 <InputField label="Email" type="email" name="data[email]" />
-                <AddressInputField />
+                <InputField
+                  label="Address / Location of trees"
+                  name="data[address]"
+                />
+                {/* <AddressInputField /> */}
                 <CategoryDropdown />
                 <InputField
                   label="Project Description"

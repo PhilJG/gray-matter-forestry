@@ -6,10 +6,10 @@
    id="Layer_1"
    x="0px"
    y="0px"
-   viewBox="0 0 900.65509 699.97626"
+   viewBox="0 0 1000.91022 721.19752"
    xml:space="preserve"
-   width="657.65509"
-   height="699.97626"
+   width="764.91022"
+   height="721.19751"
    xmlns="http://www.w3.org/2000/svg"
    ><defs
    id="defs1178" />
@@ -27,7 +27,7 @@
 
 <g
    id="g1414"
-   transform="translate(100.3693,-3.446453)"><g
+   transform="translate(159.99685,-3.446453)"><g
      id="g3552"><g
        id="g3782"><g
          id="g1173">
@@ -156,7 +156,8 @@
    id="path1169" />
 	</g>
 </g><g
-         id="g3745"><text
+         id="g3745"
+         transform="matrix(1.1630872,0,0,1.1630872,-43.258605,-93.497942)"><text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:135.376px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.3844"
            x="-107.00272"
@@ -167,11 +168,11 @@
              x="-107.00272"
              y="602.85767">Gray Matter</tspan></text></g><text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:66.6895px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.66724"
-         x="-31.122076"
-         y="684.68298"
+         style="font-style:normal;font-weight:normal;font-size:77.5657px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.93915"
+         x="-79.456291"
+         y="702.84802"
          id="text4014"><tspan
            id="tspan4012"
-           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:66.6895px;font-family:'Cormorant Garamond';-inkscape-font-specification:'Cormorant Garamond, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.66724"
-           x="-31.122076"
-           y="684.68298">Forestry Consulting</tspan></text></g></g></g></svg>
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:77.5657px;font-family:'Cormorant Garamond';-inkscape-font-specification:'Cormorant Garamond, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.93915"
+           x="-79.456291"
+           y="702.84802">Forestry Consulting</tspan></text></g></g></g></svg>
