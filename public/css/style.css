@@ -294,6 +294,7 @@ header .intro-text {
 /* Features Section */
 #features {
   background: #f6f6f6;
+  width: auto;
 }
 #features i.fa {
   padding: 3rem;
@@ -695,24 +696,21 @@ label {
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 100%;
-    max-width: 100%;
+  /* .container {
     overflow-x: hidden;
-  }
+  } */
 
   .navbar-fixed-top {
+    position: static;
     left: 0;
     right: 0;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+    margin: 0 auto;
   }
 
-  .navbar-header {
+  /* .navbar-header {
     margin-left: 0;
     margin-right: 0;
-  }
+  } */
 
   .intro {
     height: 75vh;
