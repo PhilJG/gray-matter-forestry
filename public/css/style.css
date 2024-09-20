@@ -240,7 +240,7 @@ a:focus,
 .intro {
   display: table;
   width: 100%;
-  height: 75vh;
+  height: auto;
   padding: 0;
   background: url(../img/gray-matter-forestry-header.webp) no-repeat;
   background-size: contain;

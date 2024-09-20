@@ -25,7 +25,7 @@ export const SeeTheForest = (props) => {
               their development goals without unnecessary delays or
               complications.
             </p>
-            {/* <h5>Moving Your Projects Forward</h5>
+            <h5>Moving Your Projects Forward</h5>
             <p>
               Our business arose from the frustration faced by our clients
               frustration with the complex, expensive, and lengthy building
@@ -35,7 +35,7 @@ export const SeeTheForest = (props) => {
               simplified, efficient solution for construction projects in the
               Greater Toronto Area (GTA).
             </p>
-            <h5>Our Story</h5>
+            {/* <h5>Our Story</h5>
             <p>
               Construction projects are inherently complex, with numerous boxes
               that need to be checked at all stages. Recognizing that we are
