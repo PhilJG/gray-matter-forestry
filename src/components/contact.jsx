@@ -103,6 +103,9 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
+      <div className="row mx-auto text-center">
+        Copyright 2024 . All rights reserved
+      </div>
     </div>
   );
 };

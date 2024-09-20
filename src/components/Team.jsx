@@ -13,7 +13,7 @@ export const Team = (props) => {
           <div className=" col-md-4 col-sm-12 order-1 order-md-2">
             <img
               src={ClaytonGrayHeadshot}
-              className="img-fluid  headshot"
+              className="img-fluid headshot"
               alt="Clayton Gray"
             />
           </div>
