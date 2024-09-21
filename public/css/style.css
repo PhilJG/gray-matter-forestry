@@ -289,6 +289,10 @@ header .intro-text {
   background-color: (0, 0, 0, 0.8);
 }
 
+.text-center {
+  text-align: center;
+}
+
 .feature-border {
   border: 1px solid #3498db;
 }
@@ -727,7 +731,7 @@ label {
   }
 
   .image-text-container {
-    flex-direction: column-reverse;
+    display: none;
   }
 
   header .intro-text {
@@ -739,5 +743,8 @@ label {
 
   #about img {
     margin: 50px 0;
+  }
+  .image-two {
+    display: none;
   }
 }

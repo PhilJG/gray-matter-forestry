@@ -48,9 +48,9 @@ export const SeeTheForest = (props) => {
         </div>
         <div className="row flex-md-row-reverse">
           <div className="col-xs-12 col-md-4  image-text-container">
-            <img src={SeeTheTreesImage} className="img-responsive" alt="" />
+            <img src={SeeTheTreesImage} className="image-two" alt="" />
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-8">
+          <div className="col-xs-12  col-md-8">
             {" "}
             <h5>Our Story</h5>
             <p>

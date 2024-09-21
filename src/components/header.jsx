@@ -15,7 +15,9 @@ export const Header = (props) => {
                   {props.data ? props.data.title : "Loading"}
                   <span></span>
                 </h1>
-                <p>{props.data ? props.data.paragraph : "Loading"}</p>
+                <p className="text-center image-two">
+                  {props.data ? props.data.paragraph : "Loading"}
+                </p>
                 <a
                   href="#contact"
                   className="btn btn-custom btn-lg page-scroll"
