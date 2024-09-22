@@ -37,7 +37,7 @@ export const SeeTheForest = (props) => {
               Greater Toronto Area (GTA).
             </p>
           </div>
-          <div className="col-xs-12 col-md-4 image-text-container">
+          <div className="col-xs-12 col-md-4 d-xs-none d-md-block image-text-container">
             {" "}
             <img
               src={SeeTheForestImage}
@@ -48,7 +48,11 @@ export const SeeTheForest = (props) => {
         </div>
         <div className="row flex-md-row-reverse">
           <div className="col-xs-12 col-md-4  image-text-container">
-            <img src={SeeTheTreesImage} className="image-two" alt="" />
+            <img
+              src={SeeTheTreesImage}
+              className="image-two d-md-none"
+              alt=""
+            />
           </div>
           <div className="col-xs-12  col-md-8">
             {" "}
