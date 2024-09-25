@@ -6,10 +6,6 @@ export const Services = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>Our Services</h2>
-          <p>
-            We offer competitive pricing tailored to the unique needs of each
-            project. Our services include:
-          </p>
         </div>
         <div className="row">
           {props.data

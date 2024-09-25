@@ -5,7 +5,7 @@ export const Features = (props) => {
     <div id="features" className="text-center section">
       <div className="container">
         <div className="text-center section-title">
-          <h2>Benefits</h2>
+          <h2>Streamlining permit approvals</h2>
         </div>
         <div className="row border justify-content-center">
           <div className="offset-md-2">
@@ -18,7 +18,7 @@ export const Features = (props) => {
                     {" "}
                     <i className={d.icon}></i>
                     <h3>{d.title}</h3>
-                    <p>{d.text}</p>
+                    {/* <p>{d.text}</p> */}
                   </div>
                 ))
               : "Loading..."}
