@@ -89,7 +89,7 @@ hr {
 }
 
 .section {
-  padding: 70px 0;
+  padding: 45px 0;
   overflow: hidden;
 }
 
@@ -240,15 +240,14 @@ a:focus,
 .intro {
   display: table;
   width: 100%;
-  height: auto;
   padding: 0;
   background: url(../img/gray-matter-forestry-header.webp) no-repeat;
   background-size: contain;
   background-color: #e5e5e5;
-  -webkit-background-size: 120%;
-  -moz-background-size: 120%;
-  background-size: 120%;
-  -o-background-size: 120%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  -o-background-size: 100%;
   background-position: top right;
 }
 
@@ -282,9 +281,10 @@ a:focus,
   margin: 0 auto;
   margin-bottom: 60px;
 }
+
 header .intro-text {
   padding-top: 300px;
-  padding-bottom: 150px;
+  padding-bottom: 30px;
   text-align: center;
   background-color: (0, 0, 0, 0.8);
 }
@@ -381,6 +381,7 @@ header .intro-text {
   background-image: url("../img/services-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 #services .overlay {

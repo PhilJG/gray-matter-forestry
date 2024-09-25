@@ -8,7 +8,7 @@ export const Intro = (props) => {
           <h2>We Get Your Urban Forestry Permits Faster</h2>
         </div>
         <div className="row">
-          <div className="col-xs-12 col-md-6">
+          <div className="col-xs-12 col-md-4">
             {" "}
             <img
               src="img/about-image.webp"
@@ -16,7 +16,7 @@ export const Intro = (props) => {
               alt=""
             />{" "}
           </div>
-          <div className="col-xs-12 col-md-6">
+          <div className="col-xs-12 col-md-8">
             <p>{props.data ? props.data.paragraph : "loading..."}</p>
           </div>
         </div>
