@@ -85,7 +85,7 @@ hr {
 /* Navigation */
 .navbar-logo {
   height: 75;
-  /* padding-right: 2rem; */
+  padding: 0;
 }
 
 .section {
@@ -94,7 +94,7 @@ hr {
 }
 
 #menu {
-  padding: 15px;
+  padding: 1.5rem 3rem;
   transition: all 0.8s;
 }
 #menu.navbar-default {
