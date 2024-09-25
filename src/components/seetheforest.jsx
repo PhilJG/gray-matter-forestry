@@ -14,7 +14,7 @@ export const SeeTheForest = (props) => {
           </h2>
         </div>
         <div className="row flex-row-reverse flex-md-row">
-          <div className="col-xs-12 col-md-8">
+          <div className="col-xs-12 col-md-8 col-lg-10">
             <p>
               Nowhere is it written that urban development must come at the
               expense of our natural environment. Or, that development must stop
@@ -37,7 +37,7 @@ export const SeeTheForest = (props) => {
               Greater Toronto Area (GTA).
             </p>
           </div>
-          <div className="col-xs-12 col-md-4 d-xs-none d-md-block image-text-container">
+          <div className="col-xs-12 col-md-4 col-lg-2 d-xs-none d-md-block image-text-container">
             {" "}
             <img
               src={SeeTheForestImage}
@@ -47,14 +47,14 @@ export const SeeTheForest = (props) => {
           </div>
         </div>
         <div className="row flex-md-row-reverse">
-          <div className="col-xs-12 col-md-4  image-text-container">
+          <div className="col-xs-12 col-md-4 col-lg-2 image-text-container">
             <img
               src={SeeTheTreesImage}
               className="image-two d-md-none"
               alt=""
             />
           </div>
-          <div className="col-xs-12  col-md-8">
+          <div className="col-xs-12 col-md-8 col-lg-10">
             {" "}
             <h5>Our Story</h5>
             <p>
