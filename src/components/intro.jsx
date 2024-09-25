@@ -1,8 +1,8 @@
 import React from "react";
 
-export const About = (props) => {
+export const Intro = (props) => {
   return (
-    <div id="about" className="section text-center">
+    <div id="intro" className="section text-center">
       <div className="container">
         <div className="section-title text-center">
           <h2>We Get Your Urban Forestry Permits Faster</h2>
