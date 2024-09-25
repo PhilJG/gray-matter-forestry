@@ -378,13 +378,16 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(
-    to right,
-    var(--pakistan-green) 0%,
-    var(--Shamrock-green) 100%
-  );
-  color: #fff;
+  background-image: url("../img/services-background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+#services .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5rem;
+}
+
 #services .service-desc {
   margin: 10px 10px 20px;
 }
