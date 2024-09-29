@@ -98,7 +98,7 @@
   "Testimonials": [
     {
       "img": "img/testimonials/defavari-logo.webp",
-      "text": "\"DeFaveri Group Contracting Inc. contracted Gray Matter Forestry to assist in preparing an arborist report for a municipally owned project which had a few sensitive trees to address. Clayton was extremely helpful and expedited all work as this was time sensitive. The report was extremely detailed and provided us with the exact information required to move forward with construction. I would highly recommend Gray Matter Forestry for any arborist needs\"",
+      "text": "DeFaveri Group Contracting Inc. contracted Gray Matter Forestry to assist in preparing an arborist report for a municipally owned project which had a few sensitive trees to address. Clayton was extremely helpful and expedited all work as this was time sensitive. The report was extremely detailed and provided us with the exact information required to move forward with construction. I would highly recommend Gray Matter Forestry for any arborist needs",
       "name": "Derek Meigs, Senior Project Manager - Defaveri Group"
     }
   ],
@@ -118,6 +118,7 @@
   "Features": [
     {
       "icon": "fa fa-file",
+      "img": "../icons/tree-icon-1.svg",
       "title": "Expert Arborist Reports",
       "text": "Imagine you're on the verge of starting your next big project, only to encounter delays due to incomplete or inadequate tree protection documentation. Such setbacks can be costly and frustrating."
     },

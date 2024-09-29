@@ -16,7 +16,9 @@ export const Features = (props) => {
                     className={`col-md-4 border border-primary center `}
                   >
                     {" "}
-                    <i className={d.icon}></i>
+                    <i className={d.icon}>
+                      <img href={d.img} />
+                    </i>
                     <h3>{d.title}</h3>
                     {/* <p>{d.text}</p> */}
                   </div>
